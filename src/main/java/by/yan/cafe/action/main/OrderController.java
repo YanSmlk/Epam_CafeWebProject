@@ -44,7 +44,6 @@ public class OrderController extends Thread
                     }
                 }
                 TimeUnit.HOURS.sleep(ORDER_CHECK_INTERVAL);
-                TimeUnit.SECONDS.sleep(10);
             }
             catch (InterruptedException ex)
             {
