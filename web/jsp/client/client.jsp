@@ -120,6 +120,7 @@
                    <h3>${balanceTitle}</h3>
                    <p> <strong>${balancePoints}</strong>  ${requestScope.points}</p>
                    <p> <strong>${balanceMoney}</strong>  ${requestScope.money}$</p>
+                    <hr>
                    <button input type="submit" onclick="setCommVal('ADD_MONEY')" class="btn btn-default">${buttMoneyMore}</button>
                 </div>
             </div>
