@@ -1,4 +1,4 @@
-package by.yan.cafe.test;
+package by.yan.cafe.tag;
 
 import javax.servlet.jsp.tagext.TagSupport;
 import javax.servlet.jsp.JspException;

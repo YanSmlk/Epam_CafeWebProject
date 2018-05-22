@@ -12,7 +12,7 @@ web-jsptaglibrary_2_1.xsd">
 
     <tag>
         <name>getinfo</name>
-        <tag-class>by.yan.cafe.test.GetInfoTag</tag-class>
+        <tag-class>by.yan.cafe.tag.GetInfoTag</tag-class>
         <body-content>empty</body-content>
     </tag>
 
