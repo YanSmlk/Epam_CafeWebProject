@@ -33,13 +33,14 @@ public class Test
        // System.out.println(passHash("1234esfd3"));
         //System.out.println(RoleType.CLIENT.toString());
 
+
        boolean bb1;
         int hh='1';
 
-System.out.println(hh);
+//System.out.println(hh);
 
-        String str="12";
-        byte bb=Byte.valueOf(str);
+        String st1r="12";
+        byte bb=Byte.valueOf(st1r);
 
 
     }
