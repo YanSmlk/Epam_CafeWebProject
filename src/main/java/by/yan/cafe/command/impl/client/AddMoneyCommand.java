@@ -39,4 +39,5 @@ public class AddMoneyCommand implements Command
             throw new RuntimeException(ex);
         }
     }
+
 }

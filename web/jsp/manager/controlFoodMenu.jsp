@@ -154,11 +154,9 @@
                             <button input type="submit" onclick="setCommVal('CHANGE_AVAILABLE_STATUS')"
                                     name="foodElem" value="meal|${meal.id}" class="btn btn-warning">${removeFromSale}</button>
                         </div>
-
                     </div>
                     <hr>
                 </c:forEach>
-
             </div>
 
             <div id="panel2" class="tab-pane fade">
@@ -198,7 +196,6 @@
                     </div>
 
                     <hr>
-
                     <c:forEach var="dessert" items="${dessertArr}" >
                         <div class="media">
                             <div class="media-left">
@@ -247,7 +244,6 @@
 
             <div id="panel3" class="tab-pane fade">
                 <h3>${drinks}</h3>
-
 
                 <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#drinkAdd">
                     ${addDrinkOpen}</button>
@@ -321,7 +317,6 @@
                             <button input type="submit" onclick="setCommVal('CHANGE_AVAILABLE_STATUS')"
                                     name="foodElem" value="drink|${drink.id}" class="btn btn-warning">${removeFromSale}</button>
                         </div>
-
                     </div>
                     <hr>
                 </c:forEach>
@@ -386,7 +381,6 @@
                 </c:forEach>
 
             </div>
-
         </div>
     </div>
 

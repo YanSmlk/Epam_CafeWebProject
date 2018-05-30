@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="mytag" uri="/WEB-INF/mytaglib.tld" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 
 <head>
@@ -29,7 +28,6 @@
             return true;
         }
     </script>
-
 </head>
 
 <body>
@@ -49,28 +47,26 @@
         </div>
 
         <div class="dataInput">
-
-        <div class="form-group">
-            <label for="login" class="control-label">${login}<span style="color:red">*</span></label>
-            <input type="text" name="login" class="form-control"  maxlength="15" id="login" placeholder=${login}  >
+            <div class="form-group">
+                <label for="login" class="control-label">${login}<span style="color:red">*</span></label>
+                <input type="text" name="login" class="form-control"  maxlength="15" id="login" placeholder=${login}  >
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label">${password}<span style="color:red">*</span></label>
+                <input type="password" name="password" class="form-control"  maxlength="20" id="password" placeholder=${password} >
+            </div>
+            <div class="form-group">
+                <c:if test = "${not empty requestScope.noUser}">
+                    <p class="text-danger"> ${errNotFound}</p>
+                </c:if>
+                <c:if test = "${not empty requestScope.badLoginData}">
+                    <p class="text-danger"> ${errBadData}</p>
+                </c:if>
+            </div>
+            <div class="form-group">
+                <button input type="submit" onclick="setCommVal('LOGIN_USER')" class="btn btn-success"> ${buttLogIn}</button>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="password" class="control-label">${password}<span style="color:red">*</span></label>
-            <input type="password" name="password" class="form-control"  maxlength="20" id="password" placeholder=${password} >
-        </div>
-        <div class="form-group">
-            <c:if test = "${not empty requestScope.noUser}">
-                <p class="text-danger"> ${errNotFound}</p>
-            </c:if>
-            <c:if test = "${not empty requestScope.badLoginData}">
-                <p class="text-danger"> ${errBadData}</p>
-            </c:if>
-        </div>
-        <div class="form-group">
-            <button input type="submit" onclick="setCommVal('LOGIN_USER')" class="btn btn-success"> ${buttLogIn}</button>
-        </div>
-    </div>
-
     </div>
 
     <footer class="footer">

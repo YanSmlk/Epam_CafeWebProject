@@ -12,6 +12,7 @@ import java.util.List;
 
 public class LoginUserAction
 {
+
     public RoleType tryLogin(String login, String password) throws RepositoryException, ActionException
     {
         try

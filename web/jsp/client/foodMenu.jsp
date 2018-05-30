@@ -158,7 +158,6 @@
                         </div>
                         <hr>
                     </c:forEach>
-
                 </div>
             </div>
 
@@ -186,12 +185,10 @@
                             </div>
                             <button input type="submit" onclick="setCommVal('ADD_TO_ORDER')"
                                     name="foodElem" value="drink|${drink.id}" class="btn btn-default">${buttAddToOrder}</button>
-
                         </div>
                     </div>
                     <hr>
                 </c:forEach>
-
             </div>
 
             <div id="panel4" class="${classTypeBasket}">
@@ -265,10 +262,7 @@
                     <h3>${basketTitleEmpty}</h3>
                 </c:if>
             </div>
-
-
         </div>
-
     </div>
 
     <footer class="footer">

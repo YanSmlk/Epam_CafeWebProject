@@ -11,7 +11,6 @@ import java.io.IOException;
 public class SessionFilter implements Filter
 {
     private FilterConfig filterConfig;
-    private static final String COMMAND_LOGOUT = "LOGOUT";
     private static final String COMMAND_MAIN_FORWARS = "MAIN_FORWARD";
     private static final String PARAMETER_COMMAND = "command";
     private static final String INDEX_JSP = "/index.jsp";
@@ -65,8 +64,6 @@ public class SessionFilter implements Filter
     }
 
     public void destroy()
-    {
-
-    }
+    {}
 
 }

@@ -18,7 +18,6 @@ public class ChangeLangCommand implements Command
         HttpSession session = request.getSession();
         session.setAttribute(LANG, langVal);
         String pagePath=(String)session.getAttribute(SESSION_LAST_PAGE);
-
         Router router = new Router();
         router.setRouteType(Router.RouteType.REDIRECT);
         router.setPagePath(pagePath);

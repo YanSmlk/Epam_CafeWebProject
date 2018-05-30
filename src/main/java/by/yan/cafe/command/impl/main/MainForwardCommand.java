@@ -41,7 +41,6 @@ public class MainForwardCommand implements Command
                 router.setRouteType(Router.RouteType.REDIRECT);
                 break;
         }
-
         router.setPagePath(pagePath);
         return router;
     }

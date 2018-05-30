@@ -2,7 +2,6 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="mytag" uri="/WEB-INF/mytaglib.tld" %>
-
 <html>
 <head>
 
@@ -27,8 +26,8 @@
             return true;
         }
     </script>
-
 </head>
+
 <body>
 
 <form action="FrontController" method="post">

@@ -343,4 +343,5 @@ public class ProxyConnection implements Connection
     {
         return connection.isWrapperFor(iface);
     }
+
 }

@@ -21,5 +21,6 @@ public class GetInfoTag extends TagSupport
         }
         return SKIP_BODY;
     }
+
 }
 

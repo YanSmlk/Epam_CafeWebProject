@@ -2,9 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="/WEB-INF/mytaglib.tld" prefix="mytag" %>
-
 <html>
-
 <head>
 
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
@@ -32,11 +30,9 @@
             return true;
         }
     </script>
-
 </head>
 
 <body>
-
 
 <form action="FrontController" method="post">
 
@@ -123,7 +119,6 @@
 
 <script src="static/js/jquery-3.2.1.min.js"></script>
 <script src="static/js/bootstrap.min.js"></script>
-
 
 </form>
 

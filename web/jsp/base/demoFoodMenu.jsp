@@ -26,8 +26,8 @@
             return true;
         }
     </script>
-
 </head>
+
 <body>
 
 <form action="FrontController" method="post">
@@ -113,7 +113,6 @@
             </div>
         </div>
     </div>
-
 
     <footer class="footer">
         <p class="text-muted"><mytag:getinfo/></p>

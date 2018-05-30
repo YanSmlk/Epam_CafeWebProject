@@ -59,7 +59,6 @@ public class AddToOrderCommand implements Command
             LOGGER.log(Level.ERROR,""+ex);
             throw new RuntimeException(ex);
         }
-
         return router;
     }
 
