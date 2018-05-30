@@ -18,6 +18,7 @@
     <fmt:message bundle="${local}" key="page.clientProfile.settings" var="settiings" />
     <fmt:message bundle="${local}" key="page.clientProfile.settingsTitle" var="settiingsTitle" />
     <fmt:message bundle="${local}" key="page.clientProfile.myOrdersTitle" var="myOrdersTitle" />
+    <fmt:message bundle="${local}" key="page.clientProfile.noOrdersYet" var="noOrdersYet" />
     <fmt:message bundle="${local}" key="page.clientProfile.balanceTitle" var="balanceTitle" />
     <fmt:message bundle="${local}" key="page.clientProfile.orderNum" var="orderNum" />
     <fmt:message bundle="${local}" key="page.clientProfile.gettingTime" var="gettingTime" />
@@ -61,6 +62,10 @@
         <div class="tab-content">
             <div id="panel1" class="tab-pane fade in active">
                 <h3>${myOrdersTitle}</h3>
+
+                <c:if test="${empty orders }">
+                    <h4>${noOrdersYet}</h4>
+                </c:if>
 
                 <div class="container">
                     <div class="panel-group" id="accordion">

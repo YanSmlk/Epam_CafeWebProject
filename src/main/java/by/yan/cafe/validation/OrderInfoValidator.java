@@ -22,8 +22,10 @@ public class OrderInfoValidator
                 Date currDate = simpleDateFormat.parse(currTime);
                 Date maxDate = simpleDateFormat.parse(maxTime);
                 Date minDate = simpleDateFormat.parse(minTime);
-               // return ((gettingDate.before(maxDate))&&(gettingDate.after(minDate)));
-                return ((gettingDate.before(maxDate))&&(gettingDate.after(minDate))&&(gettingDate.after(currDate)));
+               // return ((gettingDate.before(maxDate))&&(gettingDate.after(minDate))&&(gettingDate.after(currDate)));
+                return ((gettingDate.before(maxDate))&&(gettingDate.after(minDate))
+                        &&(currDate.after(minDate))&&(currDate.before(maxDate))
+                        &&((gettingDate.after(currDate))||gettingDate.equals(currDate)));
             }
             catch (ParseException ex)
             {

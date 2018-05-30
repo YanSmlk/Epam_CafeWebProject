@@ -324,6 +324,7 @@
 
             <div id="panel4" class="tab-pane fade">
                 <h3>${outHeader}</h3>
+
                 <c:if test="${empty outOfStockMealArr && empty outOfStockDessertArr && empty outOfStockDrinkArr  }">
                     <h4>${emptyOutOfStock}</h4>
                 </c:if>
