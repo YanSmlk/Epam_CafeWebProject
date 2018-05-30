@@ -3,6 +3,7 @@ package by.yan.cafe.servlet;
 import by.yan.cafe.action.main.OrderController;
 import by.yan.cafe.command.ActionFactory;
 import by.yan.cafe.command.Command;
+import by.yan.cafe.command.impl.main.EmptyCommand;
 import by.yan.cafe.connection.ConnectionPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -47,7 +48,7 @@ public class FrontController extends javax.servlet.http.HttpServlet
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         Optional<Command> commandOptional= ActionFactory.defineCommand(request.getParameter(PARAM_COMMAND));
-        Command command = commandOptional.get();
+        Command command = commandOptional.orElse(new EmptyCommand());
         Router router = command.execute(request);
         String pagePath=router.getPagePath();
         if (router.getRoute() == Router.RouteType.FORWARD)
