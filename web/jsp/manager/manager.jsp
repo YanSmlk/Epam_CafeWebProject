@@ -16,6 +16,7 @@
     <fmt:message bundle="${local}" key="page.adminPage.ordersControl" var="orderControl" />
     <fmt:message bundle="${local}" key="page.adminPage.currentOrders" var="current" />
     <fmt:message bundle="${local}" key="page.adminPage.currentOrdersManagment" var="currManage" />
+    <fmt:message bundle="${local}" key="page.adminPage.noNewOrders" var="noNewOrders" />
     <fmt:message bundle="${local}" key="page.adminPage.finishedOrders" var="finished" />
     <fmt:message bundle="${local}" key="page.adminPage.finishedOrdersHistory" var="finishHist" />
     <fmt:message bundle="${local}" key="page.adminPage.cancekedOrders" var="canceled" />
@@ -61,6 +62,11 @@
         <div class="tab-content">
             <div id="panel1" class="tab-pane fade in active">
                 <h3>${currManage}</h3>
+
+                <c:if test="${empty ordersCurrent }">
+                    <h4>${noNewOrders}</h4>
+                </c:if>
+
                 <c:forEach var="currOrder" items="${ordersCurrent}" >
                     <div class="panel panel-warning">
                         <div class="panel-heading"> <p> <strong>${orderNum}</strong>${currOrder.id} </p></div>
